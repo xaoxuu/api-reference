@@ -60,11 +60,21 @@
 	
 	<optgroup label="Instance Methods">
 		
+		<option value="//api/name/ax_animatedColor:duration:repeatCount:">- ax_animatedColor:duration:repeatCount:</option>
+		
+		<option value="//api/name/ax_animatedColor:duration:repeatDuration:">- ax_animatedColor:duration:repeatDuration:</option>
+		
 		<option value="//api/name/ax_borderWidth:color:">- ax_borderWidth:color:</option>
 		
 		<option value="//api/name/ax_cornerRadius:shadow:">- ax_cornerRadius:shadow:</option>
 		
+		<option value="//api/name/ax_customShadowWithOpacity:radius:offset:">- ax_customShadowWithOpacity:radius:offset:</option>
+		
+		<option value="//api/name/ax_customShadowWithOpacity:radius:offset:color:path:">- ax_customShadowWithOpacity:radius:offset:color:path:</option>
+		
 		<option value="//api/name/ax_maskToCircle">- ax_maskToCircle</option>
+		
+		<option value="//api/name/ax_removeColorAnimation">- ax_removeColorAnimation</option>
 		
 		<option value="//api/name/ax_shadow:">- ax_shadow:</option>
 		
@@ -269,6 +279,142 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/ax_customShadowWithOpacity:radius:offset:" title="ax_customShadowWithOpacity:radius:offset:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_customShadowWithOpacity:radius:offset:">&ndash;&nbsp;ax_customShadowWithOpacity:radius:offset:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义阴影</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ax_customShadowWithOpacity:(CGFloat)<em>opacity</em> radius:(CGFloat)<em>radius</em> offset:(CGSize)<em>offset</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>opacity</code></th>
+						<td><p>透明度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>半径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offset</code></th>
+						<td><p>偏移</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CALayer+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_customShadowWithOpacity:radius:offset:color:path:" title="ax_customShadowWithOpacity:radius:offset:color:path:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_customShadowWithOpacity:radius:offset:color:path:">&ndash;&nbsp;ax_customShadowWithOpacity:radius:offset:color:path:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义阴影</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ax_customShadowWithOpacity:(CGFloat)<em>opacity</em> radius:(CGFloat)<em>radius</em> offset:(CGSize)<em>offset</em> color:(UIColor *)<em>color</em> path:(CGPathRef)<em>path</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>opacity</code></th>
+						<td><p>透明度</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>半径</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offset</code></th>
+						<td><p>偏移</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>路径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CALayer+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/ax_whiteBorder:" title="ax_whiteBorder:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/ax_whiteBorder:">&ndash;&nbsp;ax_whiteBorder:</a></code>
 </h3>
@@ -379,6 +525,173 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_animatedColor:duration:repeatDuration:" title="ax_animatedColor:duration:repeatDuration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_animatedColor:duration:repeatDuration:">&ndash;&nbsp;ax_animatedColor:duration:repeatDuration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>颜色渐变动画</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ax_animatedColor:(UIColor *)<em>color</em> duration:(CFTimeInterval)<em>duration</em> repeatDuration:(CFTimeInterval)<em>repeatDuration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>duration</code></th>
+						<td><p>持续时间</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>repeatDuration</code></th>
+						<td><p>重复时间</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CALayer+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_animatedColor:duration:repeatCount:" title="ax_animatedColor:duration:repeatCount:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_animatedColor:duration:repeatCount:">&ndash;&nbsp;ax_animatedColor:duration:repeatCount:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>颜色渐变动画</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ax_animatedColor:(UIColor *)<em>color</em> duration:(CFTimeInterval)<em>duration</em> repeatCount:(float)<em>repeatCount</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>color</code></th>
+						<td><p>颜色</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>duration</code></th>
+						<td><p>持续时间</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>repeatCount</code></th>
+						<td><p>重复次数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CALayer+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_removeColorAnimation" title="ax_removeColorAnimation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_removeColorAnimation">&ndash;&nbsp;ax_removeColorAnimation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>清除颜色渐变动画</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)ax_removeColorAnimation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CALayer+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -394,7 +707,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 xaoxuu. All rights reserved. Updated: 2017-12-15</p>
+						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-01-12</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
