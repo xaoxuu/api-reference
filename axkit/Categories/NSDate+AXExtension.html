@@ -52,11 +52,27 @@
 
 	
 	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/intValue">intValue</option>
+		
+		<option value="//api/name/integerValue">integerValue</option>
+		
+		<option value="//api/name/isoStringValue">isoStringValue</option>
+		
+	</optgroup>
+	
 
 	
 	<optgroup label="Class Methods">
 		
-		<option value="//api/name/dateWithDateInteger:">+ dateWithDateInteger:</option>
+		<option value="//api/name/ax_dateWithISOFormatString:">+ ax_dateWithISOFormatString:</option>
+		
+		<option value="//api/name/ax_dateWithIntegerValue:">+ ax_dateWithIntegerValue:</option>
+		
+		<option value="//api/name/ax_dateWithString:format:">+ ax_dateWithString:format:</option>
+		
+		<option value="//api/name/ax_dateWithString:format:timeZone:locale:">+ ax_dateWithString:format:timeZone:locale:</option>
 		
 	</optgroup>
 	
@@ -64,7 +80,25 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/dateInteger">- dateInteger</option>
+		<option value="//api/name/addDays">- addDays</option>
+		
+		<option value="//api/name/addMinutes">- addMinutes</option>
+		
+		<option value="//api/name/addMonths">- addMonths</option>
+		
+		<option value="//api/name/addSeconds">- addSeconds</option>
+		
+		<option value="//api/name/addWeeks">- addWeeks</option>
+		
+		<option value="//api/name/addYears">- addYears</option>
+		
+		<option value="//api/name/addhours">- addhours</option>
+		
+		<option value="//api/name/ax_stringWithFormat:">- ax_stringWithFormat:</option>
+		
+		<option value="//api/name/ax_stringWithFormat:timeZone:locale:">- ax_stringWithFormat:timeZone:locale:</option>
+		
+		<option value="//api/name/stringValue">- stringValue</option>
 		
 	</optgroup>
 	
@@ -105,8 +139,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/dateInteger" title="dateInteger"></a>
-	<h3 class="method-title"><code><a href="#//api/name/dateInteger">&ndash;&nbsp;dateInteger</a></code>
+	<a name="//api/name/integerValue" title="integerValue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/integerValue">&nbsp;&nbsp;integerValue</a></code>
 </h3>
 
 	<div class="method-info">
@@ -121,15 +155,150 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSInteger)dateInteger</code></div>
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) NSInteger integerValue</code></div>
 
 		    
 			
 
 			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/intValue" title="intValue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/intValue">&nbsp;&nbsp;intValue</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>8位数的整型值(yyyyMMdd)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (assign, readonly, nonatomic) int intValue</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isoStringValue" title="isoStringValue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isoStringValue">&nbsp;&nbsp;isoStringValue</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ISOformat字符串(yyyy-MM-dd&rsquo;T'HH:mm:ssZ)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (strong, readonly, nonatomic) NSString *isoStringValue</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_dateWithIntegerValue:" title="ax_dateWithIntegerValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_dateWithIntegerValue:">+&nbsp;ax_dateWithIntegerValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>将8位数的日期值(yyyyMMdd)转换成日期</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable instancetype)ax_dateWithIntegerValue:(NSInteger)<em>integerValue</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>integerValue</code></th>
+						<td><p>8位数的整型值(yyyyMMdd)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>8位数的整型值(yyyyMMdd)</p>
+				<p>日期</p>
 			</div>
 			
 
@@ -151,8 +320,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/dateWithDateInteger:" title="dateWithDateInteger:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/dateWithDateInteger:">+&nbsp;dateWithDateInteger:</a></code>
+	<a name="//api/name/ax_dateWithString:format:" title="ax_dateWithString:format:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_dateWithString:format:">+&nbsp;ax_dateWithString:format:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -162,12 +331,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>将8位数的日期值(yyyyMMdd)转换成日期</p>
+				<p>根据日期字符串和格式生成日期</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (nullable NSDate *)dateWithDateInteger:(NSInteger)<em>dateInteger</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (nullable instancetype)ax_dateWithString:(NSString *)<em>dateString</em> format:(NSString *)<em>format</em></code></div>
 
 		    
 			
@@ -176,8 +345,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>dateInteger</code></th>
-						<td><p>8位数的整型值(yyyyMMdd)</p></td>
+						<th scope="row" class="argument-name"><code>dateString</code></th>
+						<td><p>日期字符串</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>format</code></th>
+						<td><p>格式</p></td>
 					</tr>
 				
 				</table>
@@ -189,6 +363,591 @@
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
 				<p>日期</p>
 			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_dateWithString:format:timeZone:locale:" title="ax_dateWithString:format:timeZone:locale:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_dateWithString:format:timeZone:locale:">+&nbsp;ax_dateWithString:format:timeZone:locale:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据日期字符串、格式、时区、locale生成日期</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable instancetype)ax_dateWithString:(NSString *)<em>dateString</em> format:(NSString *)<em>format</em> timeZone:(nullable NSTimeZone *)<em>timeZone</em> locale:(nullable NSLocale *)<em>locale</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dateString</code></th>
+						<td><p>日期字符串</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>format</code></th>
+						<td><p>格式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeZone</code></th>
+						<td><p>时区</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>locale</code></th>
+						<td><p>locale</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>日期</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_dateWithISOFormatString:" title="ax_dateWithISOFormatString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_dateWithISOFormatString:">+&nbsp;ax_dateWithISOFormatString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据ISOformat字符串生成日期</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable instancetype)ax_dateWithISOFormatString:(NSString *)<em>dateString</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dateString</code></th>
+						<td><p>ISOformat字符串</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>日期</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_stringWithFormat:" title="ax_stringWithFormat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_stringWithFormat:">&ndash;&nbsp;ax_stringWithFormat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据日期格式生成日期字符串</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)ax_stringWithFormat:(NSString *)<em>format</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>format</code></th>
+						<td><p>日期格式</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>日期字符串</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_stringWithFormat:timeZone:locale:" title="ax_stringWithFormat:timeZone:locale:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_stringWithFormat:timeZone:locale:">&ndash;&nbsp;ax_stringWithFormat:timeZone:locale:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据日期格式、时区、locale生成日期字符串</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)ax_stringWithFormat:(NSString *)<em>format</em> timeZone:(nullable NSTimeZone *)<em>timeZone</em> locale:(nullable NSLocale *)<em>locale</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>format</code></th>
+						<td><p>格式</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeZone</code></th>
+						<td><p>时区</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>locale</code></th>
+						<td><p>locale</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>日期字符串</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stringValue" title="stringValue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stringValue">&ndash;&nbsp;stringValue</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>生成日期format格式的字符串，传入参数为format</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *( ^ ) ( NSString *))stringValue</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addYears" title="addYears"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addYears">&ndash;&nbsp;addYears</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>增加年</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDate *( ^ ) ( NSInteger ))addYears</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMonths" title="addMonths"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMonths">&ndash;&nbsp;addMonths</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>增加月</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDate *( ^ ) ( NSInteger ))addMonths</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addWeeks" title="addWeeks"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addWeeks">&ndash;&nbsp;addWeeks</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>增加周数（一年中的第几周）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDate *( ^ ) ( NSInteger ))addWeeks</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addDays" title="addDays"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addDays">&ndash;&nbsp;addDays</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>增加天</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDate *( ^ ) ( NSInteger ))addDays</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addhours" title="addhours"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addhours">&ndash;&nbsp;addhours</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>增加小时</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDate *( ^ ) ( NSInteger ))addhours</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMinutes" title="addMinutes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMinutes">&ndash;&nbsp;addMinutes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>增加分钟</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDate *( ^ ) ( NSInteger ))addMinutes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+AXExtension.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addSeconds" title="addSeconds"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addSeconds">&ndash;&nbsp;addSeconds</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>增加秒</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDate *( ^ ) ( NSInteger ))addSeconds</code></div>
+
+		    
+			
+
 			
 
 			
@@ -223,7 +982,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-01-12</p>
+						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-01-24</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
