@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>UINavigationBar(AXExtension) Category Reference</title>
+	<title>AXTableViewCell Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -52,15 +52,15 @@
 
 	
 	
-
-	
-
-	
-	<optgroup label="Instance Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/ax_hideSeparator">- ax_hideSeparator</option>
+		<option value="//api/name/delegate">delegate</option>
 		
 	</optgroup>
+	
+
+	
+
 	
 	
 </select>
@@ -75,13 +75,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">UINavigationBar(AXExtension) Category Reference</h1>
+					<h1 class="title">AXTableViewCell Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<th>Inherits from</th>
+	<td>AXTableViewCellType</td>
+</tr><tr>
 	<th>Declared in</th>
-	<td>UINavigationBar+AXExtension.h<br />UINavigationBar+AXExtension.m</td>
+	<td>AXTableViewCell.h<br />AXTableViewCell.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -99,8 +102,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/ax_hideSeparator" title="ax_hideSeparator"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_hideSeparator">&ndash;&nbsp;ax_hideSeparator</a></code>
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
 </h3>
 
 	<div class="method-info">
@@ -110,12 +113,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>隐藏系统自带的分割线</p>
+				<p>delegate</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_hideSeparator</code></div>
+			<div class="method-subsection method-declaration"><code>@property (weak, nonatomic) NSObject&lt;AXTableViewCellDelegate&gt; *delegate</code></div>
 
 		    
 			
@@ -133,7 +136,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UINavigationBar+AXExtension.h</code></p>
+				<p><code class="declared-in-ref">AXTableViewCell.h</code></p>
 			</div>
 			
 			

@@ -58,21 +58,19 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/ax_tableViewCell:willSetModel:forRowAtIndexPath:">- ax_tableViewCell:willSetModel:forRowAtIndexPath:</option>
+		<option value="//api/name/ax_tableView:dataSource:">- ax_tableView:dataSource:</option>
 		
-		<option value="//api/name/ax_tableViewCellIcon:forRowAtIndexPath:">- ax_tableViewCellIcon:forRowAtIndexPath:</option>
+		<option value="//api/name/ax_tableView:didSelectedRowAtIndexPath:model:">- ax_tableView:didSelectedRowAtIndexPath:model:</option>
 		
-		<option value="//api/name/ax_tableViewDataSource:">- ax_tableViewDataSource:</option>
+		<option value="//api/name/ax_tableView:didSetModelForCell:atIndexPath:">- ax_tableView:didSetModelForCell:atIndexPath:</option>
+		
+		<option value="//api/name/ax_tableView:willPushViewController:fromRowAtIndexPath:">- ax_tableView:willPushViewController:fromRowAtIndexPath:</option>
+		
+		<option value="//api/name/ax_tableView:willSetModel:forRowAtIndexPath:">- ax_tableView:willSetModel:forRowAtIndexPath:</option>
 		
 		<option value="//api/name/ax_tableViewDidLoadFinished:">- ax_tableViewDidLoadFinished:</option>
 		
-		<option value="//api/name/ax_tableViewDidSelectedRowAtIndexPath:">- ax_tableViewDidSelectedRowAtIndexPath:</option>
-		
 		<option value="//api/name/ax_tableViewPreloadDataSource">- ax_tableViewPreloadDataSource</option>
-		
-		<option value="//api/name/ax_tableViewShouldPushToViewController:fromRowAtIndexPath:">- ax_tableViewShouldPushToViewController:fromRowAtIndexPath:</option>
-		
-		<option value="//api/name/ax_tableViewWillPushToViewController:fromRowAtIndexPath:">- ax_tableViewWillPushToViewController:fromRowAtIndexPath:</option>
 		
 	</optgroup>
 	
@@ -127,7 +125,8 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>预加载的数据源，项目中有和类同名的json数据源可以不用实现此方法</p>
+				<p>预加载的数据源，只在tableview初始化的时候加载一次，刷新的时候不走此接口
+项目中有和类同名的json数据源可以不用实现此方法</p>
 			</div>
 			
 		    
@@ -137,6 +136,11 @@
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>预加载的数据源</p>
+			</div>
 			
 
 			
@@ -157,8 +161,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_tableViewDataSource:" title="ax_tableViewDataSource:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_tableViewDataSource:">&ndash;&nbsp;ax_tableViewDataSource:</a></code>
+	<a name="//api/name/ax_tableView:dataSource:" title="ax_tableView:dataSource:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_tableView:dataSource:">&ndash;&nbsp;ax_tableView:dataSource:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -168,18 +172,24 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>设置异步加载的数据源，已经实现了预加载的数据源并且数据源不需要更新可以不实现此方法。</p>
+				<p>设置异步加载的数据源，刷新的时候会从此接口重新获取数据
+已经实现了预加载的数据源并且数据源不需要更新可以不实现此方法。</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_tableViewDataSource:(void ( ^ ) ( AXTableModelType *dataSource ))<em>dataSource</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_tableView:(AXTableViewType *)<em>tableView</em> dataSource:(void ( ^ ) ( AXTableModelType *dataSource ))<em>dataSource</em></code></div>
 
 		    
 			
 			<div class="method-subsection arguments-section parameters">
 				<h4 class="method-subtitle parameter-title">Parameters</h4>
 				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tableView</code></th>
+						<td><p>table view</p></td>
+					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>dataSource</code></th>
@@ -226,7 +236,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_tableViewDidLoadFinished:(UITableView&lt;AXTableView&gt; *)<em>tableView</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_tableViewDidLoadFinished:(AXTableViewType *)<em>tableView</em></code></div>
 
 		    
 			
@@ -263,8 +273,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_tableViewCell:willSetModel:forRowAtIndexPath:" title="ax_tableViewCell:willSetModel:forRowAtIndexPath:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_tableViewCell:willSetModel:forRowAtIndexPath:">&ndash;&nbsp;ax_tableViewCell:willSetModel:forRowAtIndexPath:</a></code>
+	<a name="//api/name/ax_tableView:willSetModel:forRowAtIndexPath:" title="ax_tableView:willSetModel:forRowAtIndexPath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_tableView:willSetModel:forRowAtIndexPath:">&ndash;&nbsp;ax_tableView:willSetModel:forRowAtIndexPath:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -274,12 +284,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>即将设置模型</p>
+				<p>即将设置数据模型</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_tableViewCell:(AXTableViewCellType *)<em>cell</em> willSetModel:(AXTableRowModelType *)<em>model</em> forRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_tableView:(AXTableViewType *)<em>tableView</em> willSetModel:(AXTableRowModelType *)<em>model</em> forRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
 
 		    
 			
@@ -288,8 +298,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>cell</code></th>
-						<td><p>cell</p></td>
+						<th scope="row" class="argument-name"><code>tableView</code></th>
+						<td><p>table view</p></td>
 					</tr>
 				
 					<tr>
@@ -326,8 +336,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_tableViewCellIcon:forRowAtIndexPath:" title="ax_tableViewCellIcon:forRowAtIndexPath:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_tableViewCellIcon:forRowAtIndexPath:">&ndash;&nbsp;ax_tableViewCellIcon:forRowAtIndexPath:</a></code>
+	<a name="//api/name/ax_tableView:didSetModelForCell:atIndexPath:" title="ax_tableView:didSetModelForCell:atIndexPath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_tableView:didSetModelForCell:atIndexPath:">&ndash;&nbsp;ax_tableView:didSetModelForCell:atIndexPath:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -337,12 +347,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>cell的icon</p>
+				<p>已经设置了数据模型</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_tableViewCellIcon:(void ( ^ ) ( UIImage *icon ))<em>icon</em> forRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_tableView:(AXTableViewType *)<em>tableView</em> didSetModelForCell:(AXTableViewCellType *)<em>cell</em> atIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
 
 		    
 			
@@ -351,8 +361,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>icon</code></th>
-						<td><p>icon</p></td>
+						<th scope="row" class="argument-name"><code>tableView</code></th>
+						<td><p>table view</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cell</code></th>
+						<td><p>cell</p></td>
 					</tr>
 				
 					<tr>
@@ -384,8 +399,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_tableViewDidSelectedRowAtIndexPath:" title="ax_tableViewDidSelectedRowAtIndexPath:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_tableViewDidSelectedRowAtIndexPath:">&ndash;&nbsp;ax_tableViewDidSelectedRowAtIndexPath:</a></code>
+	<a name="//api/name/ax_tableView:didSelectedRowAtIndexPath:model:" title="ax_tableView:didSelectedRowAtIndexPath:model:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_tableView:didSelectedRowAtIndexPath:model:">&ndash;&nbsp;ax_tableView:didSelectedRowAtIndexPath:model:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -395,12 +410,13 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>选中了某一行(实现了此方法后点击cell将不会自动执行push操作，除非此方法内实现了push操作。)</p>
+				<p>选中了某一行
+实现了此方法后点击cell将不会自动执行push操作，除非此方法内实现了push操作或者调用[super &hellip;]。</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_tableViewDidSelectedRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_tableView:(AXTableViewType *)<em>tableView</em> didSelectedRowAtIndexPath:(NSIndexPath *)<em>indexPath</em> model:(AXTableRowModelType *)<em>model</em></code></div>
 
 		    
 			
@@ -437,71 +453,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_tableViewShouldPushToViewController:fromRowAtIndexPath:" title="ax_tableViewShouldPushToViewController:fromRowAtIndexPath:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_tableViewShouldPushToViewController:fromRowAtIndexPath:">&ndash;&nbsp;ax_tableViewShouldPushToViewController:fromRowAtIndexPath:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>是否允许push到某个控制器</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)ax_tableViewShouldPushToViewController:(UIViewController *)<em>viewController</em> fromRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>viewController</code></th>
-						<td><p>目标视图控制器</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>indexPath</code></th>
-						<td><p>索引</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>是否可以进行push</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">AXTableView.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/ax_tableViewWillPushToViewController:fromRowAtIndexPath:" title="ax_tableViewWillPushToViewController:fromRowAtIndexPath:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_tableViewWillPushToViewController:fromRowAtIndexPath:">&ndash;&nbsp;ax_tableViewWillPushToViewController:fromRowAtIndexPath:</a></code>
+	<a name="//api/name/ax_tableView:willPushViewController:fromRowAtIndexPath:" title="ax_tableView:willPushViewController:fromRowAtIndexPath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_tableView:willPushViewController:fromRowAtIndexPath:">&ndash;&nbsp;ax_tableView:willPushViewController:fromRowAtIndexPath:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -516,7 +469,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_tableViewWillPushToViewController:(UIViewController *)<em>viewController</em> fromRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_tableView:(AXTableViewType *)<em>tableView</em> willPushViewController:(UIViewController *)<em>viewController</em> fromRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
 
 		    
 			
@@ -572,7 +525,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-01-24</p>
+						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-03-03</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
