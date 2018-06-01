@@ -43,6 +43,8 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 
 	
 	
@@ -58,7 +60,9 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/appendPathComponent">- appendPathComponent</option>
+		<option value="//api/name/appendStringToFile">- appendStringToFile</option>
+		
+		<option value="//api/name/archiveObject">- archiveObject</option>
 		
 		<option value="//api/name/cachePath">- cachePath</option>
 		
@@ -74,27 +78,43 @@
 		
 		<option value="//api/name/path">- path</option>
 		
-		<option value="//api/name/readArchivedFile">- readArchivedFile</option>
-		
 		<option value="//api/name/readArray">- readArray</option>
+		
+		<option value="//api/name/readArrayResult">- readArrayResult</option>
+		
+		<option value="//api/name/readData">- readData</option>
+		
+		<option value="//api/name/readDataResult">- readDataResult</option>
+		
+		<option value="//api/name/readDataWithOptions">- readDataWithOptions</option>
+		
+		<option value="//api/name/readDataWithOptionsResult">- readDataWithOptionsResult</option>
 		
 		<option value="//api/name/readDictionary">- readDictionary</option>
 		
+		<option value="//api/name/readDictionaryResult">- readDictionaryResult</option>
+		
 		<option value="//api/name/readJson">- readJson</option>
+		
+		<option value="//api/name/readJsonResult">- readJsonResult</option>
 		
 		<option value="//api/name/readString">- readString</option>
 		
+		<option value="//api/name/readStringResult">- readStringResult</option>
+		
 		<option value="//api/name/removeFile">- removeFile</option>
 		
-		<option value="//api/name/saveArchivedFile">- saveArchivedFile</option>
+		<option value="//api/name/saveJson">- saveJson</option>
 		
-		<option value="//api/name/saveFile">- saveFile</option>
-		
-		<option value="//api/name/saveStringByAppendingToEndOfFile">- saveStringByAppendingToEndOfFile</option>
+		<option value="//api/name/saveObject">- saveObject</option>
 		
 		<option value="//api/name/subpaths">- subpaths</option>
 		
 		<option value="//api/name/tmpPath">- tmpPath</option>
+		
+		<option value="//api/name/unarchiveObject">- unarchiveObject</option>
+		
+		<option value="//api/name/unarchiveObjectResult">- unarchiveObjectResult</option>
 		
 	</optgroup>
 	
@@ -123,6 +143,14 @@
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>保存json对象</p>
+					</div>
+					
+					
 
 					
 					
@@ -135,6 +163,170 @@
 
 						<div class="task-list">
 							<div class="section-method">
+	<a name="//api/name/readData" title="readData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readData">&ndash;&nbsp;readData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>读取一个data</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSData *( ^ ) ( void ))readData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readDataWithOptions" title="readDataWithOptions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readDataWithOptions">&ndash;&nbsp;readDataWithOptions</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>读取一个data</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSData *( ^ ) ( NSDataReadingOptions options ))readDataWithOptions</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readDataResult" title="readDataResult"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readDataResult">&ndash;&nbsp;readDataResult</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>读取一个data</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( void ))readDataResult</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readDataWithOptionsResult" title="readDataWithOptionsResult"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readDataWithOptionsResult">&ndash;&nbsp;readDataWithOptionsResult</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>读取一个data</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( NSDataReadingOptions options ))readDataWithOptionsResult</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/readArray" title="readArray"></a>
 	<h3 class="method-title"><code><a href="#//api/name/readArray">&ndash;&nbsp;readArray</a></code>
 </h3>
@@ -152,6 +344,52 @@
 		    
 
 			<div class="method-subsection method-declaration"><code>- (nullable __kindof NSArray *( ^ ) ( void ))readArray</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>数组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readArrayResult" title="readArrayResult"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readArrayResult">&ndash;&nbsp;readArrayResult</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>读取一个数组或可变数组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( void ))readArrayResult</code></div>
 
 		    
 			
@@ -227,6 +465,52 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/readDictionaryResult" title="readDictionaryResult"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readDictionaryResult">&ndash;&nbsp;readDictionaryResult</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>读取一个字典或可变字典</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( void ))readDictionaryResult</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>字典</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/readJson" title="readJson"></a>
 	<h3 class="method-title"><code><a href="#//api/name/readJson">&ndash;&nbsp;readJson</a></code>
 </h3>
@@ -244,6 +528,52 @@
 		    
 
 			<div class="method-subsection method-declaration"><code>- (nullable id ( ^ ) ( void ))readJson</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>数组或字典</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readJsonResult" title="readJsonResult"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readJsonResult">&ndash;&nbsp;readJsonResult</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>读取一个json文件</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( void ))readJsonResult</code></div>
 
 		    
 			
@@ -319,8 +649,54 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/readArchivedFile" title="readArchivedFile"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readArchivedFile">&ndash;&nbsp;readArchivedFile</a></code>
+	<a name="//api/name/readStringResult" title="readStringResult"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readStringResult">&ndash;&nbsp;readStringResult</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>读取一个纯文本文件</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( void ))readStringResult</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>txt文件</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unarchiveObject" title="unarchiveObject"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unarchiveObject">&ndash;&nbsp;unarchiveObject</a></code>
 </h3>
 
 	<div class="method-info">
@@ -335,7 +711,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (nullable id ( ^ ) ( void ))readArchivedFile</code></div>
+			<div class="method-subsection method-declaration"><code>- (nullable id ( ^ ) ( void ))unarchiveObject</code></div>
 
 		    
 			
@@ -365,8 +741,54 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/saveFile" title="saveFile"></a>
-	<h3 class="method-title"><code><a href="#//api/name/saveFile">&ndash;&nbsp;saveFile</a></code>
+	<a name="//api/name/unarchiveObjectResult" title="unarchiveObjectResult"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unarchiveObjectResult">&ndash;&nbsp;unarchiveObjectResult</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>解档一个已归档的文件</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( void ))unarchiveObjectResult</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>文件</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveObject" title="saveObject"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveObject">&ndash;&nbsp;saveObject</a></code>
 </h3>
 
 	<div class="method-info">
@@ -381,7 +803,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL ( ^ ) ( id ))saveFile</code></div>
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( id ))saveObject</code></div>
 
 		    
 			
@@ -389,7 +811,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>成功与否</p>
+				<p>操作结果</p>
 			</div>
 			
 
@@ -411,8 +833,54 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/saveArchivedFile" title="saveArchivedFile"></a>
-	<h3 class="method-title"><code><a href="#//api/name/saveArchivedFile">&ndash;&nbsp;saveArchivedFile</a></code>
+	<a name="//api/name/saveJson" title="saveJson"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveJson">&ndash;&nbsp;saveJson</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>保存一个json对象（数组、字典）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( id ))saveJson</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>操作结果</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/archiveObject" title="archiveObject"></a>
+	<h3 class="method-title"><code><a href="#//api/name/archiveObject">&ndash;&nbsp;archiveObject</a></code>
 </h3>
 
 	<div class="method-info">
@@ -427,7 +895,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL ( ^ ) ( NSObject&lt;NSCoding&gt; *))saveArchivedFile</code></div>
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( NSObject&lt;NSCoding&gt; *))archiveObject</code></div>
 
 		    
 			
@@ -435,7 +903,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>成功与否</p>
+				<p>操作结果</p>
 			</div>
 			
 
@@ -457,8 +925,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/saveStringByAppendingToEndOfFile" title="saveStringByAppendingToEndOfFile"></a>
-	<h3 class="method-title"><code><a href="#//api/name/saveStringByAppendingToEndOfFile">&ndash;&nbsp;saveStringByAppendingToEndOfFile</a></code>
+	<a name="//api/name/appendStringToFile" title="appendStringToFile"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appendStringToFile">&ndash;&nbsp;appendStringToFile</a></code>
 </h3>
 
 	<div class="method-info">
@@ -473,7 +941,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL ( ^ ) ( NSString *))saveStringByAppendingToEndOfFile</code></div>
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( NSString *))appendStringToFile</code></div>
 
 		    
 			
@@ -481,7 +949,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>成功与否</p>
+				<p>操作结果</p>
 			</div>
 			
 
@@ -519,7 +987,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL ( ^ ) ( void ))removeFile</code></div>
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( void ))removeFile</code></div>
 
 		    
 			
@@ -527,7 +995,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>成功与否</p>
+				<p>操作结果</p>
 			</div>
 			
 
@@ -861,47 +1329,6 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/appendPathComponent" title="appendPathComponent"></a>
-	<h3 class="method-title"><code><a href="#//api/name/appendPathComponent">&ndash;&nbsp;appendPathComponent</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>路径</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSString *( ^ ) ( NSString *__nullable ))appendPathComponent</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">NSString+AXFileStreamChainedWrapper.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/isDirectoryExist" title="isDirectoryExist"></a>
 	<h3 class="method-title"><code><a href="#//api/name/isDirectoryExist">&ndash;&nbsp;isDirectoryExist</a></code>
 </h3>
@@ -964,7 +1391,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL ( ^ ) ( void ))createDirectory</code></div>
+			<div class="method-subsection method-declaration"><code>- (AXFileOperationResult *( ^ ) ( void ))createDirectory</code></div>
 
 		    
 			
@@ -1008,7 +1435,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-03-03</p>
+						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-06-01</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

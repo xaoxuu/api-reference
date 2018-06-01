@@ -66,29 +66,27 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/ax_eachButtonInvokeAction:">- ax_eachButtonInvokeAction:</option>
+		<option value="//api/name/ax_allButtonInvokeAction:">- ax_allButtonInvokeAction:</option>
 		
-		<option value="//api/name/ax_eachImageViewInvokeAction:">- ax_eachImageViewInvokeAction:</option>
+		<option value="//api/name/ax_allImageViewInvokeAction:">- ax_allImageViewInvokeAction:</option>
 		
-		<option value="//api/name/ax_eachLabelInvokeAction:">- ax_eachLabelInvokeAction:</option>
+		<option value="//api/name/ax_allLabelInvokeAction:">- ax_allLabelInvokeAction:</option>
 		
-		<option value="//api/name/ax_eachSubview:action:">- ax_eachSubview:action:</option>
+		<option value="//api/name/ax_allSubview:action:">- ax_allSubview:action:</option>
 		
-		<option value="//api/name/ax_eachSubviewWithTag:action:">- ax_eachSubviewWithTag:action:</option>
+		<option value="//api/name/ax_allSubviewWithTag:action:">- ax_allSubviewWithTag:action:</option>
 		
-		<option value="//api/name/ax_eachSubviewWithTagsInRange:action:">- ax_eachSubviewWithTagsInRange:action:</option>
+		<option value="//api/name/ax_allSubviewWithTagsInRange:action:">- ax_allSubviewWithTagsInRange:action:</option>
 		
-		<option value="//api/name/ax_eachTextFieldInvokeAction:">- ax_eachTextFieldInvokeAction:</option>
+		<option value="//api/name/ax_allTextFieldInvokeAction:">- ax_allTextFieldInvokeAction:</option>
 		
-		<option value="//api/name/ax_eachTextViewInvokeAction:">- ax_eachTextViewInvokeAction:</option>
+		<option value="//api/name/ax_allTextViewInvokeAction:">- ax_allTextViewInvokeAction:</option>
 		
 		<option value="//api/name/ax_fillWithRandomColor">- ax_fillWithRandomColor</option>
 		
 		<option value="//api/name/ax_layer:">- ax_layer:</option>
 		
 		<option value="//api/name/ax_removeAllSubviews:">- ax_removeAllSubviews:</option>
-		
-		<option value="//api/name/controller">- controller</option>
 		
 		<option value="//api/name/frameInScreen">- frameInScreen</option>
 		
@@ -192,52 +190,6 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/controller" title="controller"></a>
-	<h3 class="method-title"><code><a href="#//api/name/controller">&ndash;&nbsp;controller</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>当前view所在的控制器controller</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (UIViewController *)controller</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>控制器controller</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">UIView+AXExtension.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/ax_removeAllSubviews:" title="ax_removeAllSubviews:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/ax_removeAllSubviews:">&ndash;&nbsp;ax_removeAllSubviews:</a></code>
 </h3>
@@ -291,8 +243,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_eachSubview:action:" title="ax_eachSubview:action:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_eachSubview:action:">&ndash;&nbsp;ax_eachSubview:action:</a></code>
+	<a name="//api/name/ax_allSubview:action:" title="ax_allSubview:action:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_allSubview:action:">&ndash;&nbsp;ax_allSubview:action:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -307,7 +259,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_eachSubview:(Class)<em>subClass</em> action:(void ( ^ ) ( __kindof UIView *subview ))<em>action</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_allSubview:(Class)<em>subClass</em> action:(void ( ^ ) ( __kindof UIView *subview ))<em>action</em></code></div>
 
 		    
 			
@@ -349,8 +301,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_eachLabelInvokeAction:" title="ax_eachLabelInvokeAction:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_eachLabelInvokeAction:">&ndash;&nbsp;ax_eachLabelInvokeAction:</a></code>
+	<a name="//api/name/ax_allLabelInvokeAction:" title="ax_allLabelInvokeAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_allLabelInvokeAction:">&ndash;&nbsp;ax_allLabelInvokeAction:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -365,7 +317,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_eachLabelInvokeAction:(void ( ^ ) ( __kindof UILabel *label ))<em>action</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_allLabelInvokeAction:(void ( ^ ) ( __kindof UILabel *label ))<em>action</em></code></div>
 
 		    
 			
@@ -402,8 +354,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_eachTextFieldInvokeAction:" title="ax_eachTextFieldInvokeAction:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_eachTextFieldInvokeAction:">&ndash;&nbsp;ax_eachTextFieldInvokeAction:</a></code>
+	<a name="//api/name/ax_allTextFieldInvokeAction:" title="ax_allTextFieldInvokeAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_allTextFieldInvokeAction:">&ndash;&nbsp;ax_allTextFieldInvokeAction:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -418,7 +370,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_eachTextFieldInvokeAction:(void ( ^ ) ( __kindof UITextField *textField ))<em>action</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_allTextFieldInvokeAction:(void ( ^ ) ( __kindof UITextField *textField ))<em>action</em></code></div>
 
 		    
 			
@@ -455,8 +407,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_eachTextViewInvokeAction:" title="ax_eachTextViewInvokeAction:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_eachTextViewInvokeAction:">&ndash;&nbsp;ax_eachTextViewInvokeAction:</a></code>
+	<a name="//api/name/ax_allTextViewInvokeAction:" title="ax_allTextViewInvokeAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_allTextViewInvokeAction:">&ndash;&nbsp;ax_allTextViewInvokeAction:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -471,7 +423,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_eachTextViewInvokeAction:(void ( ^ ) ( __kindof UITextView *textView ))<em>action</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_allTextViewInvokeAction:(void ( ^ ) ( __kindof UITextView *textView ))<em>action</em></code></div>
 
 		    
 			
@@ -508,8 +460,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_eachButtonInvokeAction:" title="ax_eachButtonInvokeAction:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_eachButtonInvokeAction:">&ndash;&nbsp;ax_eachButtonInvokeAction:</a></code>
+	<a name="//api/name/ax_allButtonInvokeAction:" title="ax_allButtonInvokeAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_allButtonInvokeAction:">&ndash;&nbsp;ax_allButtonInvokeAction:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -524,7 +476,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_eachButtonInvokeAction:(void ( ^ ) ( __kindof UIButton *button ))<em>action</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_allButtonInvokeAction:(void ( ^ ) ( __kindof UIButton *button ))<em>action</em></code></div>
 
 		    
 			
@@ -561,8 +513,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_eachImageViewInvokeAction:" title="ax_eachImageViewInvokeAction:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_eachImageViewInvokeAction:">&ndash;&nbsp;ax_eachImageViewInvokeAction:</a></code>
+	<a name="//api/name/ax_allImageViewInvokeAction:" title="ax_allImageViewInvokeAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_allImageViewInvokeAction:">&ndash;&nbsp;ax_allImageViewInvokeAction:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -577,7 +529,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_eachImageViewInvokeAction:(void ( ^ ) ( __kindof UIImageView *imageView ))<em>action</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_allImageViewInvokeAction:(void ( ^ ) ( __kindof UIImageView *imageView ))<em>action</em></code></div>
 
 		    
 			
@@ -614,8 +566,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_eachSubviewWithTagsInRange:action:" title="ax_eachSubviewWithTagsInRange:action:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_eachSubviewWithTagsInRange:action:">&ndash;&nbsp;ax_eachSubviewWithTagsInRange:action:</a></code>
+	<a name="//api/name/ax_allSubviewWithTagsInRange:action:" title="ax_allSubviewWithTagsInRange:action:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_allSubviewWithTagsInRange:action:">&ndash;&nbsp;ax_allSubviewWithTagsInRange:action:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -630,7 +582,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_eachSubviewWithTagsInRange:(AXIntegerRange)<em>tagRange</em> action:(void ( ^ ) ( __kindof UIView *subview ))<em>action</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_allSubviewWithTagsInRange:(AXIntegerRange)<em>tagRange</em> action:(void ( ^ ) ( __kindof UIView *subview ))<em>action</em></code></div>
 
 		    
 			
@@ -672,8 +624,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/ax_eachSubviewWithTag:action:" title="ax_eachSubviewWithTag:action:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/ax_eachSubviewWithTag:action:">&ndash;&nbsp;ax_eachSubviewWithTag:action:</a></code>
+	<a name="//api/name/ax_allSubviewWithTag:action:" title="ax_allSubviewWithTag:action:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_allSubviewWithTag:action:">&ndash;&nbsp;ax_allSubviewWithTag:action:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -688,7 +640,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)ax_eachSubviewWithTag:(NSInteger)<em>tag</em> action:(void ( ^ ) ( __kindof UIView *subview ))<em>action</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)ax_allSubviewWithTag:(NSInteger)<em>tag</em> action:(void ( ^ ) ( __kindof UIView *subview ))<em>action</em></code></div>
 
 		    
 			
@@ -889,7 +841,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-03-03</p>
+						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-06-01</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

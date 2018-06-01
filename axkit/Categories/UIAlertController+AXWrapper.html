@@ -56,9 +56,25 @@
 	
 	<optgroup label="Class Methods">
 		
+		<option value="//api/name/ax_actionSheetWithTitle:message:actions:">+ ax_actionSheetWithTitle:message:actions:</option>
+		
+		<option value="//api/name/ax_alertWithTitle:message:actions:">+ ax_alertWithTitle:message:actions:</option>
+		
 		<option value="//api/name/ax_showActionSheetWithTitle:message:actions:">+ ax_showActionSheetWithTitle:message:actions:</option>
 		
+		<option value="//api/name/ax_showActionSheetWithTitle:message:actions:completion:">+ ax_showActionSheetWithTitle:message:actions:completion:</option>
+		
+		<option value="//api/name/ax_showActionSheetWithTitle:message:actions:fromViewController:">+ ax_showActionSheetWithTitle:message:actions:fromViewController:</option>
+		
+		<option value="//api/name/ax_showActionSheetWithTitle:message:actions:fromViewController:completion:">+ ax_showActionSheetWithTitle:message:actions:fromViewController:completion:</option>
+		
 		<option value="//api/name/ax_showAlertWithTitle:message:actions:">+ ax_showAlertWithTitle:message:actions:</option>
+		
+		<option value="//api/name/ax_showAlertWithTitle:message:actions:completion:">+ ax_showAlertWithTitle:message:actions:completion:</option>
+		
+		<option value="//api/name/ax_showAlertWithTitle:message:actions:fromViewController:">+ ax_showAlertWithTitle:message:actions:fromViewController:</option>
+		
+		<option value="//api/name/ax_showAlertWithTitle:message:actions:fromViewController:completion:">+ ax_showAlertWithTitle:message:actions:fromViewController:completion:</option>
 		
 	</optgroup>
 	
@@ -129,7 +145,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (instancetype)ax_showAlertWithTitle:(nullable NSString *)<em>title</em> message:(nullable NSString *)<em>message</em> actions:(void ( ^ __nullable ) ( UIAlertController *alert ))<em>actions</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)ax_showAlertWithTitle:(nullable NSString *)<em>title</em> message:(nullable NSString *)<em>message</em> actions:(void ( ^ __nullable ) ( UIAlertController *alert ))<em>actions</em></code></div>
 
 		    
 			
@@ -176,6 +192,287 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/ax_showAlertWithTitle:message:actions:completion:" title="ax_showAlertWithTitle:message:actions:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_showAlertWithTitle:message:actions:completion:">+&nbsp;ax_showAlertWithTitle:message:actions:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>从根视图弹出一个弹窗Alert（标题+消息+自定义按钮）
+如果action为nil，则只有一个确定按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ax_showAlertWithTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> actions:(void ( ^ ) ( UIAlertController *_Nonnull ))<em>actions</em> completion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actions</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>完成回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIAlertController+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_showAlertWithTitle:message:actions:fromViewController:" title="ax_showAlertWithTitle:message:actions:fromViewController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_showAlertWithTitle:message:actions:fromViewController:">+&nbsp;ax_showAlertWithTitle:message:actions:fromViewController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>弹出一个弹窗Alert（标题+消息+自定义按钮）
+如果action为nil，则只有一个确定按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ax_showAlertWithTitle:(nullable NSString *)<em>title</em> message:(nullable NSString *)<em>message</em> actions:(void ( ^ __nullable ) ( UIAlertController *alert ))<em>actions</em> fromViewController:(nullable UIViewController *)<em>viewController</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actions</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>viewController</code></th>
+						<td><p>从哪个VC弹出</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIAlertController+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_showAlertWithTitle:message:actions:fromViewController:completion:" title="ax_showAlertWithTitle:message:actions:fromViewController:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_showAlertWithTitle:message:actions:fromViewController:completion:">+&nbsp;ax_showAlertWithTitle:message:actions:fromViewController:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>弹出一个弹窗Alert（标题+消息+自定义按钮）
+如果action为nil，则只有一个确定按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ax_showAlertWithTitle:(nullable NSString *)<em>title</em> message:(nullable NSString *)<em>message</em> actions:(void ( ^ __nullable ) ( UIAlertController *alert ))<em>actions</em> fromViewController:(nullable UIViewController *)<em>viewController</em> completion:(void ( ^ __nullable ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actions</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>viewController</code></th>
+						<td><p>从哪个VC弹出</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>完成回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIAlertController+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_alertWithTitle:message:actions:" title="ax_alertWithTitle:message:actions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_alertWithTitle:message:actions:">+&nbsp;ax_alertWithTitle:message:actions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建一个弹窗Alert（标题+消息+自定义按钮）
+如果action为nil，则只有一个确定按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)ax_alertWithTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> actions:(void ( ^ ) ( UIAlertController *_Nonnull ))<em>actions</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actions</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>实例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIAlertController+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/ax_showActionSheetWithTitle:message:actions:" title="ax_showActionSheetWithTitle:message:actions:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/ax_showActionSheetWithTitle:message:actions:">+&nbsp;ax_showActionSheetWithTitle:message:actions:</a></code>
 </h3>
@@ -192,7 +489,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (instancetype)ax_showActionSheetWithTitle:(nullable NSString *)<em>title</em> message:(nullable NSString *)<em>message</em> actions:(void ( ^ __nullable ) ( UIAlertController *alert ))<em>actions</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (void)ax_showActionSheetWithTitle:(nullable NSString *)<em>title</em> message:(nullable NSString *)<em>message</em> actions:(void ( ^ __nullable ) ( UIAlertController *alert ))<em>actions</em></code></div>
 
 		    
 			
@@ -233,6 +530,287 @@
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">UIAlertController+AXWrapper.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_showActionSheetWithTitle:message:actions:completion:" title="ax_showActionSheetWithTitle:message:actions:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_showActionSheetWithTitle:message:actions:completion:">+&nbsp;ax_showActionSheetWithTitle:message:actions:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>从根视图弹出一个操作表ActionSheet（标题+消息+自定义按钮）
+如果action为nil，则只有一个确定按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ax_showActionSheetWithTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> actions:(void ( ^ ) ( UIAlertController *_Nonnull ))<em>actions</em> completion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actions</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>完成回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIAlertController+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_showActionSheetWithTitle:message:actions:fromViewController:" title="ax_showActionSheetWithTitle:message:actions:fromViewController:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_showActionSheetWithTitle:message:actions:fromViewController:">+&nbsp;ax_showActionSheetWithTitle:message:actions:fromViewController:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>弹出一个操作表ActionSheet（标题+消息+自定义按钮）
+如果action为nil，则只有一个确定按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ax_showActionSheetWithTitle:(nullable NSString *)<em>title</em> message:(nullable NSString *)<em>message</em> actions:(void ( ^ __nullable ) ( UIAlertController *alert ))<em>actions</em> fromViewController:(nullable UIViewController *)<em>viewController</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actions</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>viewController</code></th>
+						<td><p>从哪个VC弹出</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIAlertController+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_showActionSheetWithTitle:message:actions:fromViewController:completion:" title="ax_showActionSheetWithTitle:message:actions:fromViewController:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_showActionSheetWithTitle:message:actions:fromViewController:completion:">+&nbsp;ax_showActionSheetWithTitle:message:actions:fromViewController:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>弹出一个操作表ActionSheet（标题+消息+自定义按钮）
+如果action为nil，则只有一个确定按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)ax_showActionSheetWithTitle:(nullable NSString *)<em>title</em> message:(nullable NSString *)<em>message</em> actions:(void ( ^ __nullable ) ( UIAlertController *alert ))<em>actions</em> fromViewController:(nullable UIViewController *)<em>viewController</em> completion:(void ( ^ __nullable ) ( void ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actions</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>viewController</code></th>
+						<td><p>从哪个VC弹出</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>完成回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIAlertController+AXWrapper.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ax_actionSheetWithTitle:message:actions:" title="ax_actionSheetWithTitle:message:actions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ax_actionSheetWithTitle:message:actions:">+&nbsp;ax_actionSheetWithTitle:message:actions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建一个操作表ActionSheet（标题+消息+自定义按钮）
+如果action为nil，则只有一个确定按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)ax_actionSheetWithTitle:(NSString *)<em>title</em> message:(NSString *)<em>message</em> actions:(void ( ^ ) ( UIAlertController *_Nonnull ))<em>actions</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>标题</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>消息</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>actions</code></th>
+						<td><p>按钮</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>实例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">UIAlertController+AXWrapper.h</code></p>
 			</div>
 			
 			
@@ -490,7 +1068,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-03-03</p>
+						<p class="copyright">Copyright &copy; 2018 xaoxuu. All rights reserved. Updated: 2018-06-01</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
